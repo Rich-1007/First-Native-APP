@@ -6,6 +6,8 @@ export default function App() {
     <View style={{ flex: 1, padding: 70, backgroundColor: "plum" }}>
       <Greet name="Rich" />
       <Greet name="Manoj" />
+      <Greet name="Rich" />
+      <Greet name="Manoj" />
     </View>
   );
 }
