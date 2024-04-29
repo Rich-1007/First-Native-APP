@@ -7,7 +7,8 @@ import CCScrollView from "./Core-Components/ScrollView";
 import CCText from "./Core-Components/Text";
 import CCView from "./Core-Components/View";
 import CCStatusBar from "./Core-Components/StatusBar";
+import Greet from "./Components/Greet";
 
 export default function App() {
-  return <CCStatusBar />;
+  return <Greet name="ravi" />
 }
