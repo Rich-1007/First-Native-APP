@@ -8,7 +8,8 @@ import CCText from "./Core-Components/Text";
 import CCView from "./Core-Components/View";
 import CCStatusBar from "./Core-Components/StatusBar";
 import Greet from "./Components/Greet";
+import CCStyleSheet from "./StylingRN/StyleSheet";
 
 export default function App() {
-  return <Greet name="ravi" />
+  return <CCStyleSheet />
 }
