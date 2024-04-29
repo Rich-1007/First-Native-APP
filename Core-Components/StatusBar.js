@@ -7,7 +7,7 @@ const CCStatusBar = () => {
       <StatusBar 
       backgroundColor="yellow" 
       barStyle="dark-content" 
-      hidden
+      // hidden
       />
     </View>
   );
