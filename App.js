@@ -6,9 +6,8 @@ import CCPrassable from "./Core-Components/Prassable";
 import CCScrollView from "./Core-Components/ScrollView";
 import CCText from "./Core-Components/Text";
 import CCView from "./Core-Components/View";
+import CCStatusBar from "./Core-Components/StatusBar";
 
 export default function App() {
-  return (
-    <CCModal />
-  );
+  return <CCStatusBar />;
 }
