@@ -1,14 +1,37 @@
 import React from "react";
-import { ActivityIndicator, StatusBar, View } from "react-native";
+import { Button, View, Alert } from "react-native";
 
 const CCStatusBar = () => {
   return (
     <View style={{ backgroundColor: "white", flex: 1, padding: 60 }}>
-      <StatusBar backgroundColor="green" barStyle="dark-content" />
+      <Button
+        title="Alert-1"
+        color="orange"
+        onPress={() => Alert.alert("invalid Data")}
+      />
 
-      <ActivityIndicator size="large" />
-      <ActivityIndicator size="large" color="midnightblue" />
-      <ActivityIndicator size="large" color="midnightblue" animating={false} />
+      <Button
+        title="Alert-2"
+        color="orange"
+        onPress={() => Alert.alert("invalid Data", "DOB incurrect")}
+      />
+
+      <Button
+        title="Alert-3"
+        color="orange"
+        onPress={() =>
+          Alert.alert("invalid Data", "DOB incurrect", [
+            {
+              text: "Cancel",
+              onPress: () => console.log("Cancel Clicked"),
+            },
+            {
+              text: "Ok",
+              onPress: () => console.log("Ok Clicked"),
+            },
+          ])
+        }
+      />
     </View>
   );
 };
