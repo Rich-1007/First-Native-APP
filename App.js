@@ -9,7 +9,8 @@ import CCView from "./Core-Components/View";
 import CCStatusBar from "./Core-Components/StatusBar";
 import Greet from "./Components/Greet";
 import CCStyleSheet from "./StylingRN/StyleSheet";
+import DynamicUI from "./DynamicUI/DynamicUI";
 
 export default function App() {
-  return <CCStyleSheet />
+  return <DynamicUI />
 }
