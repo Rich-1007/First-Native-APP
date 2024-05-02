@@ -10,7 +10,8 @@ import CCStatusBar from "./Core-Components/StatusBar";
 import Greet from "./Components/Greet";
 import CCStyleSheet from "./StylingRN/StyleSheet";
 import DynamicUI from "./DynamicUI/DynamicUI";
+import CCSafeAreaView from "./DynamicUI/SafeAreaView";
 
 export default function App() {
-  return <DynamicUI />
+  return <CCSafeAreaView />
 }
