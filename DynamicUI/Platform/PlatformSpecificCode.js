@@ -35,11 +35,8 @@ const styles = StyleSheet.create({
       android: {
         color: "blue",
         fontSize: 40,
-        
       },
     }),
-
-    
   },
 });
 

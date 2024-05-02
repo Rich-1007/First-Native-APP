@@ -12,7 +12,8 @@ import CCStyleSheet from "./StylingRN/StyleSheet";
 import DynamicUI from "./DynamicUI/DynamicUI";
 import CCSafeAreaView from "./DynamicUI/SafeAreaView";
 import CCPlatformSpecificCode from "./DynamicUI/Platform/PlatformSpecificCode";
+import CustomButton from "./DynamicUI/Platform/CustomButton/CustomButton";
 
 export default function App() {
-  return <CCPlatformSpecificCode />
+  return <CustomButton title="press me" onPress={() => alert("Pressed")} />;
 }
