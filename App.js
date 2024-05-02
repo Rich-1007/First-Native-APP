@@ -11,7 +11,8 @@ import Greet from "./Components/Greet";
 import CCStyleSheet from "./StylingRN/StyleSheet";
 import DynamicUI from "./DynamicUI/DynamicUI";
 import CCSafeAreaView from "./DynamicUI/SafeAreaView";
+import CCPlatformSpecificCode from "./DynamicUI/Platform/PlatformSpecificCode";
 
 export default function App() {
-  return <CCSafeAreaView />
+  return <CCPlatformSpecificCode />
 }
