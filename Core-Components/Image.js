@@ -13,7 +13,7 @@ const CCImage = () => {
 
       {/* <Image source={logoImg} style={{ width: 300, height: 300 }} />
       <Image
-        source={{ uri: "hhtp://picsum.photos/300" }}
+        source={{ uri: "http://picsum.photos/300" }}
         style={{ width: 300, height: 300 }}
       /> */}
 

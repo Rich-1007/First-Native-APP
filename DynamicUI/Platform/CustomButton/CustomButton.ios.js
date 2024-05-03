@@ -15,7 +15,7 @@ const CustomButton = () => {
         padding: 20,
       }}
     >
-      <Text style={{ color: "green", fontSize: 24 }}>Press Me</Text>
+      <Text style={{ color: "green", fontSize: 24 }}> Press Me </Text>
     </Pressable>
   );
 };
