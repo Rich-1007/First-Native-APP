@@ -17,13 +17,19 @@ export default function App() {
         value={name}
         onChangeText={setName}
         placeholder="Enter Name"
-        
         autoCapitalize="none"
         autoCorrect={false}
 
         // secureTextEntry
         // keyboardType="numeric"
       />
+
+      <TextInput
+        placeholder="Message"
+        style={[styles.input, styles.multiline]}
+        multiline
+      />
+
       <Text style={styles.text}> My name is {name} </Text>
     </SafeAreaView>
   );
@@ -44,5 +50,9 @@ const styles = StyleSheet.create({
   text: {
     fontSize: 30,
     padding: 10,
+  },
+  multiline: {
+    minHeight: 100,
+    textAlignVertical: "top",
   },
 });
