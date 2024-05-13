@@ -29,7 +29,9 @@ export default function App() {
           ListHeaderComponent={
             <Text style={styles.headertext}> Pokimon List </Text>
           }
-          ListFooterComponent={<Text style={styles.footertext}>End of text</Text>}
+          ListFooterComponent={
+            <Text style={styles.footertext}>End of text</Text>
+          }
         />
 
         {/* {PokemonList.map((pokimon) => {
