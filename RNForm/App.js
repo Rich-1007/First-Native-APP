@@ -17,7 +17,7 @@ export default function App() {
         value={name}
         onChangeText={setName}
         placeholder="Enter Name"
-        
+
         autoCapitalize="none"
         autoCorrect={false}
 
@@ -28,21 +28,3 @@ export default function App() {
     </SafeAreaView>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: "#fff",
-    paddingTop: StatusBar.currentHeight,
-  },
-  input: {
-    height: 40,
-    margin: 12,
-    padding: 10,
-    borderWidth: 1,
-  },
-  text: {
-    fontSize: 30,
-    padding: 10,
-  },
-});
