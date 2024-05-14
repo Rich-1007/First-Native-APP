@@ -30,7 +30,7 @@ export default function App() {
         multiline
       />
 
-      <Text style={styles.text}> My name is {name} </Text>
+      <Text style={styles.text}> My name is  {name} </Text>
     </SafeAreaView>
   );
 }
