@@ -1,16 +1,16 @@
-import React from 'react'
-import FormComponents from './FormComponents'
-import { View } from 'react-native'
-
+import React from "react";
+import FormComponents from "./FormComponents";
+import { View } from "react-native";
+import LoginForm from "./LoginForm";
 
 const App = () => {
   return (
-    <View>
-      <FormComponents />
-      
-      
-    </View>
-  )
-}
+    <View style={{ flex: 1 }}>
+      {/* <FormComponents /> */}
 
-export default App
+      <LoginForm />
+    </View>
+  );
+};
+
+export default App;
