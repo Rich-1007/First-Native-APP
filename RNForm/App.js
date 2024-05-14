@@ -5,32 +5,47 @@ import {
   StatusBar,
   SafeAreaView,
   TextInput,
+  Switch,
 } from "react-native";
 import { useState } from "react";
 
 export default function App() {
   const [name, setName] = useState("");
+  const [isDarkMode, setIsDarkMode] = useState(false);
+
   return (
     <SafeAreaView style={styles.container}>
-      <TextInput
-        style={styles.input}
-        value={name}
-        onChangeText={setName}
-        placeholder="Enter Name"
-        autoCapitalize="none"
-        autoCorrect={false}
+      <View>
+        <TextInput
+          style={styles.input}
+          value={name}
+          onChangeText={setName}
+          placeholder="Enter Name"
+          autoCapitalize="none"
+          autoCorrect={false}
 
-        // secureTextEntry
-        // keyboardType="numeric"
-      />
+          // secureTextEntry
+          // keyboardType="numeric"
+        />
 
-      <TextInput
-        placeholder="Message"
-        style={[styles.input, styles.multiline]}
-        multiline
-      />
+        <TextInput
+          placeholder="Message"
+          style={[styles.input, styles.multiline]}
+          multiline
+        />
 
-      <Text style={styles.text}> My name is  {name} </Text>
+        <Text style={styles.text}> My name is {name} </Text>
+
+        <View style={styles.switchcontanner}>
+          <Text style={styles.switchtext}> Dark mode</Text>
+          <Switch
+            value={isDarkMode}
+            onChange={() => setIsDarkMode((prev) => !prev)}
+            trackColor={{ false: "red", true: "blue" }}
+            thumbColor="green"
+          />
+        </View>
+      </View>
     </SafeAreaView>
   );
 }
@@ -54,5 +69,12 @@ const styles = StyleSheet.create({
   multiline: {
     minHeight: 100,
     textAlignVertical: "top",
+  },
+  switchcontanner: {
+    flexDirection: "row",
+    justifyContent: "space-between",
+  },
+  switchtext: {
+    fontSize: 32,
   },
 });
