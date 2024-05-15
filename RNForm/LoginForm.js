@@ -16,6 +16,28 @@ export default function LoginForm() {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
 
+  const [errors, setErrors] = useState({});
+
+  const ValidateForm = () => {
+    let errors = {};
+
+    if (!username) errors.username = "username is required";
+    if (!password) errors.password = "password is required";
+
+    setErrors(errors);
+
+    return Object.keys(errors).length === 0;
+  };
+
+  const handlesubmit = () => {
+    if (ValidateForm()) {
+      // console.log("Submited" , username, password);
+      setPassword("");
+      setUsername("");
+      setErrors({});
+    }
+  };
+
   return (
     <KeyboardAvoidingView
       style={styles.container}
@@ -35,6 +57,10 @@ export default function LoginForm() {
           onChange={setUsername}
         />
 
+        {errors.username ? (
+          <Text style={styles.errorsText}>{errors.username}</Text>
+        ) : null}
+
         <Text style={styles.label}>Password</Text>
         <TextInput
           style={styles.input}
@@ -44,7 +70,11 @@ export default function LoginForm() {
           onChange={setPassword}
         />
 
-        <Button title="Login" onPress={() => {}} />
+        {errors.password ? (
+          <Text style={styles.errorsText}>{errors.password}</Text>
+        ) : null}
+
+        <Button title="Login" onPress={handlesubmit} />
       </View>
     </KeyboardAvoidingView>
   );
@@ -83,5 +113,9 @@ const styles = StyleSheet.create({
     marginBottom: 15,
     padding: 10,
     borderRadius: 5,
+  },
+  errorsText: {
+    color: "red",
+    marginBottom: 10,
   },
 });
