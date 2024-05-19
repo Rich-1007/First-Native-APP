@@ -1,4 +1,6 @@
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
+
+
 import { NavigationContainer } from "@react-navigation/native";
 import CourseListScreen from "./screens/CourseListScreen";
 import SettingsScreen from "./screens/SettingScreen";
