@@ -53,6 +53,14 @@ export default function App() {
           name="About"
           component={AboutScreen}
           initialParams={{ name: "Guest" }}
+
+          // options={({route}) => ({
+          //   title: route.params.name,
+          // })}
+          //
+          // Use options in Stack.Screen: When the title or navigation options are
+          // based on route parameters and are always the same.
+          //
         />
       </Stack.Navigator>
     </NavigationContainer>

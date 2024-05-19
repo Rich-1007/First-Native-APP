@@ -8,12 +8,12 @@ export default function HomeScreen({ navigation, route }) {
       <Text style={styles.text}> Home Screen </Text>
       <Button
         title="Go to About"
-        onPress={() => {
+        onPress={() =>
           navigation.navigate("About", {
             name: "Hricheak",
-            Post: "IAS",
-          });
-        }}
+            Post : "IAS"
+          })
+        }
       />
       <Text style={styles.text}> {route.params?.name} </Text>
     </View>

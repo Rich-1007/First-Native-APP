@@ -1,8 +1,19 @@
 import { useNavigation } from "@react-navigation/native";
+import { useLayoutEffect } from "react";
 import { View, Text, StyleSheet, Button } from "react-native";
 
 export default function AboutScreen({ route, navigation }) {
   const { name, Post } = route.params;
+
+  useLayoutEffect(() => {
+    //
+    // Use useLayoutEffect: When the navigation options depend on the component's
+    // internal state or props, or when they need to be updated after the component
+    //  is rendered.
+    navigation.setOptions({
+      title: name,
+    });
+  }, [navigation, route]);
 
   // const navigation = useNavigation()
 
