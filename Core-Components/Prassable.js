@@ -14,6 +14,9 @@ const CCPrassable = () => {
         <Image source={logoImg} style={{ width: 300, height: 300 }} />
       </Pressable>
 
+
+
+
       <Pressable onPress={() => console.log("Text Pressed")}>
         <Text>
           Dear Dipen, I hope this message finds you well. I've sent you a

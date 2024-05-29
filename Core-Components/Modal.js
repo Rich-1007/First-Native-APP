@@ -20,8 +20,8 @@ const CCModal = () => {
             title="close"
             color="midnightblue"
             onPress={() => setIsModalVariable(false)}
-            // animationType="slide"
-            // presentationStyle="pageSheet"
+          // animationType="slide"
+          // presentationStyle="pageSheet"
           />
         </View>
       </Modal>

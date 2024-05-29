@@ -16,5 +16,5 @@ import CustomButton from "./DynamicUI/Platform/CustomButton/CustomButton";
 
 export default function App() {
   return <CustomButton title="press me" onPress={() => alert("Pressed")} />;
-  <CCText />
+  <CCText />;
 }

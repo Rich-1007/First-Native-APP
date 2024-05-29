@@ -20,12 +20,12 @@ const CCImage = () => {
 
 
 
-      <ImageBackground source={logoImg} style={{flex:1}}>
+      <ImageBackground source={logoImg} style={{ flex: 1 }}>
         <Text>Image Text</Text>
       </ImageBackground>
 
 
-      
+
     </View>
   );
 };
